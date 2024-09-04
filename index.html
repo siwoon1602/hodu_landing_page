@@ -20,18 +20,23 @@
     <main>
       <section class="app">
         <h3 class="sr-only">호두 APP 다운로드</h3>
+        <div class="app_content">
+          <p>
+            Lorem Ipsum is simply<br />dummy text of<br class="hide" />the
+            printing and<br />
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text<br class="hide" />
+            of the printing and <br class="hide_pc" />typesetting industry.<br
+              class="hide_pc"
+            />Lorem Ipsum has been the industry's<br class="hide" />standard
+            dummy text <br class="hide_pc" />ever since the 1500s,<br
+              class="hide"
+            />when an unknown
+          </p>
+          <button type="button">Download</button>
+        </div>
 
-        <p>
-          Lorem Ipsum is simply<br />dummy text of<br class="hide" />the
-          printing and
-        </p>
-        <p>
-          Lorem Ipsum is simply dummy text<br />
-          of the printing and typesetting industry.<br />Lorem Ipsum has been
-          the industry's<br />standard dummy text ever since the 1500s,<br />when
-          an unknown
-        </p>
-        <button type="button">Download</button>
         <img class="box_cat" src="/images/box-cat.png" alt="" />
       </section>
       <section class="introduce">
@@ -78,16 +83,20 @@
         </div>
       </section>
       <article class="subsribe">
-        <h2>
-          Subscribe to our<br class="hide" />
-          Blog post
-        </h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.<br class="hide_pc" />
-          Ipsum has been the industry's standard dummy text
-        </p>
-        <input type="text" placeholder="Enter your e-mail address" />
+        <div class="subsribe_group">
+          <h2>
+            Subscribe to our<br class="hide" />
+            Blog post
+          </h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.<br class="hide_pc" />
+            Ipsum has been the industry's standard dummy text
+          </p>
+        </div>
+        <div class="email">
+          <input type="text" placeholder="Enter your e-mail address" />
+        </div>
         <button type="button">Subsribe</button>
       </article>
     </main>
@@ -107,7 +116,7 @@
             </li>
           </ul>
         </div>
-        <ul class="footer_text">
+        <ul class="footer_text hide">
           <li>About</li>
           <li>Blog</li>
           <li>Support</li>
