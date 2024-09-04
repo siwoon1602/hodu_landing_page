@@ -37,7 +37,7 @@ button {
 
 header {
   background-color: var(--main_color--color);
-  width: 100%;
+  width: 100vw;
   position: sticky;
   top: 0;
   left: 0;
@@ -64,17 +64,25 @@ header button img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  padding: 4rem 5.2rem 0;
   background-color: var(--main_color--color);
 }
-.app p:nth-child(2) {
+.app_content button {
+  width: 10em;
+  align-self: center;
+}
+
+.app_content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.app .app_content p:nth-child(1) {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.05rem;
 }
 
-.app p:nth-child(3) {
+.app .app_content p:nth-child(2) {
   line-height: 1.75rem;
 }
 
@@ -89,7 +97,7 @@ header button img {
 }
 .introduce {
   background-color: #fff;
-  padding: 4rem 3.2rem;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +110,7 @@ header button img {
   width: 32.6rem;
   height: 19rem;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 35%;
   background-image: url(/images/img_4.jpg);
   border-radius: 1.8rem;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
@@ -166,13 +174,17 @@ header button img {
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
 }
 .learn {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .learn p {
   font-size: 1.6rem;
   line-height: 2rem;
   text-align: left;
   margin-bottom: 3rem;
+}
+
+.learn button {
+  width: 10em;
 }
 /* article */
 article {
@@ -199,6 +211,12 @@ article {
   position: relative;
 }
 
+.subsribe_group {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .subsribe h2 {
   font-size: 2.4rem;
   text-align: left;
@@ -214,10 +232,12 @@ article {
 }
 
 .subsribe input {
-  width: 21rem;
+  width: 60vw;
   padding: 1.2rem 7rem 1.2rem 4.8rem;
   align-self: center;
   border-radius: 6rem;
+  border: none;
+  position: relative;
 }
 
 .subsribe input::placeholder {
@@ -225,15 +245,31 @@ article {
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
+.email {
+  position: relative;
+}
+.subsribe .email::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: 5%;
+  top: 20%;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url(/images/mail.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .subsribe button {
   align-self: end;
 }
 
 .cat_face {
   width: 100vw;
-  height: 60vh;
-  background-size: cover;
-  background-position: top;
+  height: 50vh;
+  background-position: 50%;
+  background-size: 100%;
   background-image: url(/images/img_5.jpg);
   z-index: 1;
   transform: translatey(-3rem);
@@ -244,7 +280,7 @@ article {
   background-color: #f2e9d8;
   opacity: 60%;
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   position: absolute;
   border-radius: 10px;
   left: 0;
@@ -292,14 +328,29 @@ article {
 /* footer 끝 */
 
 @media (min-width: 767px) {
-  button {
-    padding: 1.5rem 2.9rem;
-  }
   .app {
     display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 12rem;
+    padding-top: 3.2rem;
   }
+
+  .app_content {
+    text-align: left;
+    gap: 3rem;
+  }
+
+  .app button {
+    align-self: self-start;
+  }
+
   .hide {
     display: none;
+  }
+
+  .hide_pc {
+    display: inline;
   }
 
   .introduce {
@@ -319,9 +370,54 @@ article {
   }
 
   .learn {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .learn {
+    margin-bottom: 2rem;
+  }
+
+  .learn button {
+    width: 10em;
+  }
+
+  .subsribe {
+    margin: 0 8.2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 5.2rem;
+    align-items: center;
+    position: relative;
+  }
+  .subsribe .email {
+    position: relative;
+  }
+  .subsribe button {
+    position: absolute;
+    left: 20px;
+  }
+
+  .email input {
+    width: 25vw;
+    height: 2vw;
+  }
+
+  .m .photo {
+    gap: 7.2rem;
+  }
+  .footer_box {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 8.9rem;
+    background-color: #fff;
+  }
+
+  .footer_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40vw;
   }
 }
