@@ -145,9 +145,11 @@ header button img {
 }
 
 .photo {
-  justify-content: center;
+  width: 100vw;
   gap: 2rem;
   margin-bottom: 6rem;
+  display: flex;
+  overflow: auto;
 }
 .photo img {
   width: 26rem;
@@ -163,14 +165,80 @@ header button img {
   text-align: left;
   margin-bottom: 3rem;
 }
+/* article */
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+/* aritcle 종료 */
+
+.subsribe {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5rem;
+  background-color: #263140;
+  border-radius: 1.8rem;
+  margin: auto;
+  padding: 3.6rem 3.2rem 3rem;
+  z-index: 10;
+  margin: 0 3.2rem;
+  position: relative;
+}
+
+.subsribe h2 {
+  font-size: 2.4rem;
+  text-align: left;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.subsribe p {
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+  color: #f2e9d8;
+  text-align: left;
+}
+
+.subsribe input {
+  width: 21rem;
+  padding: 1.2rem 7rem 1.2rem 4.8rem;
+  align-self: center;
+  border-radius: 6rem;
+}
+
+.subsribe input::placeholder {
+  color: #767676;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.subsribe button {
+  align-self: end;
+}
+
 .cat_face {
-  width: 80vw;
+  width: 100vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: top;
+  background-image: url(/images/img_5.jpg);
+  z-index: 1;
+  transform: translatey(-3rem);
+}
+
+.cat_face::after {
+  content: "";
+  background-color: #f2e9d8;
+  opacity: 60%;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
 }
 
 /* footer시작  */
@@ -180,9 +248,9 @@ article {
 }
 
 .sns_icon li a {
-  background-color: #f29d52; /* 배경색 지정 */
-  display: inline-block; /* 이미지 크기에 맞게 배경색 적용 */
-  padding: 0.6rem; /* 이미지 주변에 여백 추가 (선택사항) */
+  background-color: #f29d52;
+  display: inline-block;
+  padding: 0.6rem;
   border-radius: 100%;
 }
 
