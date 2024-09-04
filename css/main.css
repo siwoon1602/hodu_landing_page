@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --main_color--color: #f2e9d8;
+  --body_color--color: #d97652;
+}
+* {
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+button {
+  padding: 1.1rem 2.4rem;
+  background-color: var(--body_color--color);
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 4rem;
+}
+
+header {
+  background-color: var(--main_color--color);
+  width: 100%;
+}
+header .header_content {
+  padding: 2.4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .main_logo {
+  width: 9.2rem;
+}
+header button {
+  padding: 0;
+  background-color: var(--main_color--color);
+}
+header button img {
+  width: 3.2rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 5.2rem 0;
+  background-color: var(--main_color--color);
+}
+.app p:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.05rem;
+}
+
+.app p:nth-child(3) {
+  line-height: 1.75rem;
+}
+
+.box_cat {
+  width: 19.7rem;
+  overflow: hidden;
+  top: 5rem;
+}
+
+.introduce {
+  background-color: #fff;
+  padding: 4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateY(-5.2rem);
+}
+
+.introduce .hodu_img_01 {
+  width: 32.6rem;
+  height: 19rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/img_4.jpg);
+  border-radius: 1.8rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
+}
+.introduce_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.introduce_text p:nth-child(1) {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.05rem;
+  text-align: left;
+}
+
+.introduce_text p:nth-child(2) {
+  line-height: 1.75rem;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery_text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.gallery_text p:nth-child(1) {
+  font-size: 2.4rem;
+  color: var(--body_color--color);
+  font-weight: 700;
+  line-height: 3rem;
+}
+.gallery_text p:nth-child(2) {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.gallery_text p:nth-child(2) span {
+  color: var(--body_color--color);
+  font-weight: 700;
+}
+
+.photo {
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+.photo img {
+  width: 26rem;
+  border-radius: 1.8rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+.learn {
+  margin-bottom: 5rem;
+}
+.learn p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cat_face {
+  width: 80vw;
+}
+
+/* footer시작  */
+.sns_icon {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.sns_icon li a {
+  background-color: #f29d52; /* 배경색 지정 */
+  display: inline-block; /* 이미지 크기에 맞게 배경색 적용 */
+  padding: 0.6rem; /* 이미지 주변에 여백 추가 (선택사항) */
+  border-radius: 100%;
+}
+
+.footer_box {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 8.9rem;
+  background-color: #fff;
+}
+
+.footer_group {
+  display: flex;
+  flex-direction: column;
+  gap: 5.8rem;
+}
+
+.footer_text {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.75rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* footer 끝 */
