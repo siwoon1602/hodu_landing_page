@@ -36,6 +36,10 @@ button {
 header {
   background-color: var(--main_color--color);
   width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 header .header_content {
   padding: 2.4rem 2rem;
@@ -278,3 +282,13 @@ article {
 }
 
 /* footer 끝 */
+
+@media (min-width: 767px) {
+  .app {
+    display: flex;
+    flex-direction: row;
+  }
+  .hide {
+    display: none;
+  }
+}
