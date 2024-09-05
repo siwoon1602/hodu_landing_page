@@ -16,33 +16,32 @@
         <button class="hide_pc" type="button">
           <img src="/images/menu.svg" alt="" />
         </button>
-      <nav>
-        <button class="hide_pc">
-          <img src="./images/arrow-right.svg" alt="Close" />
-        </button>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="./about">About</a></li>
-          <li><a href="./support">Support</a></li>
-        </ul>
-        <a class="button" href="./download">Download</a>
+        <nav class="hide_m">
+          <button class="hide_pc">
+            <img src="./images/arrow-right.svg" alt="close" />
+          </button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+          <a href="./download">Download</a>
+        </nav>
       </div>
-      </nav>
     </header>
     <main>
       <section class="app">
         <h3 class="sr-only">호두 APP 다운로드</h3>
         <div class="app_content">
           <p>
-            Lorem Ipsum is simply<br />dummy text of<br class="hide" />the
-            printing and<br />
+            Lorem Ipsum is simply<br />dummy text<br class="hide_pc" />ofthe
+            printing and
           </p>
           <p>
-            Lorem Ipsum is simply dummy text<br class="hide" />
-            of the printing and <br class="see_pc" />typesetting industry.<br
-              class="see"
-            />Lorem Ipsum has been the industry's<br class="hide" />standard
-            dummy text <br class="see_pc" />ever since the 1500s,<br
+            Lorem Ipsum is simply dummy text<br class="hide_pc" />
+            of the printing and <br class="hide_m" />typesetting industry.<br />Lorem
+            Ipsum has been the industry's<br class="hide_pc" />standard dummy
+            text <br class="hide_m" />ever since the 1500s,<br
               class="hide"
             />when an unknown
           </p>
@@ -60,8 +59,11 @@
             text
           </p>
           <p>
-            Lorem Ipsum is simply dummy text of the printing<br />
-            and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing<br
+              class="hide_pc"
+            />
+            and typesetting<br class="hide_m" />
+            industry.
           </p>
         </div>
       </section>
@@ -88,8 +90,11 @@
             Lorem Ipsum is simply dummy text of the<br class="hide_pc" />
             printing and typesetting industry.<br />Lorem Ipsum has been the
             industry's<br class="hide_pc" />standard dummy text ever since the
-            1500s,<br class="see_pc" />when an unknown<br class="hide_pc" />Ipsum is simply dummy
-            text of the printing<br class="hide_pc" />and typesetting industry.
+            1500s,<br class="see_pc" />when an unknown<br
+              class="hide_pc"
+            />Ipsum is simply dummy text of the printing<br
+              class="hide_pc"
+            />and typesetting industry.
           </p>
           <button type="button">Learn More</button>
         </div>
@@ -106,13 +111,11 @@
             Ipsum has been the industry's standard dummy text
           </p>
         </div>
-        <form action="#">
-          <div class="email">
-            <input type="email" placeholder="Enter your e-mail address" />
-            <button type="submit">Subsribe</button>
-        </div>
-        </form>
 
+        <div class="email">
+          <input type="email" placeholder="Enter your e-mail address" />
+          <button type="submit">Subsribe</button>
+        </div>
       </article>
     </main>
 
@@ -125,13 +128,19 @@
           <ul class="sns_icon">
             <li>
               <a href=""><img src="/images/blog.svg" alt="" /></a>
+            </li>
+            <li>
               <a href=""><img src="/images/instagram.svg" alt="" /></a>
+            </li>
+            <li>
               <a href=""><img src="/images/facebook.svg" alt="" /></a>
+            </li>
+            <li>
               <a href=""><img src="/images/youtube.svg" alt="" /></a>
             </li>
           </ul>
         </div>
-        <ul class="footer_text hide">
+        <ul class="footer_text hide_pc">
           <li>About</li>
           <li>Blog</li>
           <li>Support</li>
@@ -143,9 +152,12 @@
     <article>
       <div class="modal_box">
         <h2 class="sr-only">Complete</h2>
-        <img src="./images/cat-subscribe.png" alt="">
+        <img src="./images/cat-subscribe.png" alt="" />
         <p>Thank You!</p>
-        <span>Lorem Ipsum is simply dummy<br class="hide_pc"> text of the printing industry.</span>
+        <span
+          >Lorem Ipsum is simply dummy<br class="hide_pc" />
+          text of the printing industry.</span
+        >
         <button type="button">OK! I Love HODU</button>
       </div>
     </article>
