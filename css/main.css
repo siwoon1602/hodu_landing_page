@@ -43,6 +43,10 @@ header {
   left: 0;
   z-index: 1000;
 }
+
+header nav {
+  display: none;
+}
 header .header_content {
   padding: 2.4rem 2rem;
   display: flex;
@@ -175,17 +179,24 @@ header button img {
 }
 .learn {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .learn p {
   font-size: 1.6rem;
   line-height: 2rem;
   text-align: left;
-  margin-bottom: 3rem;
 }
 
 .learn button {
-  width: 10em;
+  align-self: flex-end;
+  margin-bottom: 5rem;
 }
+
+/* .learn button {
+  width: 10em;
+} */
 /* article */
 article {
   display: flex;
@@ -200,7 +211,6 @@ article {
   color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: start;
   gap: 5rem;
   background-color: #263140;
   border-radius: 1.8rem;
@@ -217,11 +227,19 @@ article {
   gap: 3rem;
 }
 
+.subsribe button {
+  align-self: flex-end;
+}
 .subsribe h2 {
   font-size: 2.4rem;
   text-align: left;
   font-weight: 700;
   line-height: 3rem;
+}
+
+.subsribe form div {
+  display: flex;
+  flex-direction: column;
 }
 
 .subsribe p {
@@ -231,38 +249,34 @@ article {
   text-align: left;
 }
 
-.subsribe input {
-  width: 60vw;
-  padding: 1.2rem 7rem 1.2rem 4.8rem;
-  align-self: center;
-  border-radius: 6rem;
-  border: none;
-  position: relative;
-}
-
 .subsribe input::placeholder {
   color: #767676;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
-.email {
+
+.subsribe form {
   position: relative;
 }
-.subsribe .email::before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  left: 5%;
-  top: 20%;
+.subsribe img {
   width: 1.8rem;
   height: 1.8rem;
-  background-image: url(/images/mail.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 20;
+  left: 2rem;
+  top: 1rem;
 }
 
-.subsribe button {
-  align-self: end;
+.subsribe input {
+  background-image: url(../images/mail.svg);
+  background-position: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+  padding: 1.2rem 2.8rem 1.2rem 4.8rem;
+  border-radius: 6rem;
+  width: 60vw;
+  border: none;
+  margin-bottom: 3rem;
 }
 
 .cat_face {
@@ -327,6 +341,46 @@ article {
 
 /* footer 끝 */
 
+/* 모달창 시작*/
+.modal_box {
+  padding: 4rem 5rem 3rem;
+  background-color: var(--main_color--color);
+  background-image: url(/images/modal-bg-img.png);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 3rem;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_box img {
+  width: 6rem;
+  margin-bottom: 2.4rem;
+}
+
+.modal_box p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--body_color--color);
+  margin-bottom: 1rem;
+}
+
+.modal_box span {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+}
+.modal_box button {
+  margin-top: 2.8rem;
+}
+/* 모달창 종료 */
+
 @media (min-width: 767px) {
   .app {
     display: flex;
@@ -335,7 +389,35 @@ article {
     gap: 12rem;
     padding-top: 3.2rem;
   }
+  header nav {
+    display: flex;
+  }
 
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3rem;
+    margin-right: 4rem;
+    font-family: "SpoqaHanSansNeo-Regular";
+  }
+
+  .header_content {
+    align-items: center;
+  }
+  .header_content a {
+    text-decoration: none;
+    color: black;
+  }
+  .header_content .button {
+    padding: 1.1rem 2.4rem;
+    background-color: var(--body_color--color);
+    border: none;
+    color: white;
+    border-radius: 4rem;
+    font-family: "SpoqaHanSansNeo-Regular";
+    font-weight: 700;
+  }
   .app_content {
     text-align: left;
     gap: 3rem;
@@ -348,8 +430,10 @@ article {
   .hide {
     display: none;
   }
-
   .hide_pc {
+    display: none;
+  }
+  .see_pc {
     display: inline;
   }
 
@@ -370,9 +454,11 @@ article {
   }
 
   .learn {
-    width: 70%;
+    width: 60%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
   }
 
   .learn {
@@ -380,12 +466,16 @@ article {
   }
 
   .learn button {
-    width: 10em;
+    padding: 0.5rem 0.5rem;
+    width: 12rem;
+    height: 5rem;
+    align-self: end;
   }
 
   .subsribe {
     margin: 0 8.2rem;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -393,17 +483,25 @@ article {
   .subsribe .email {
     position: relative;
   }
-  .subsribe button {
-    position: absolute;
-    left: 20px;
+
+  .subsribe img {
+    left: 2rem;
+    top: 1.5rem;
   }
 
   .email input {
-    width: 25vw;
-    height: 2vw;
+    width: 20vw;
+    padding: 2rem 27rem 2rem 6.8rem;
+    background-position: 3rem;
   }
 
-  .m .photo {
+  .subsribe button {
+    position: absolute;
+    left: 80%;
+    top: 5%;
+  }
+
+  .photo {
     gap: 7.2rem;
   }
   .footer_box {

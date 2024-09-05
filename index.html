@@ -13,9 +13,21 @@
       <div class="header_content">
         <h1 class="sr-only">고양이 호두 홈페이지</h1>
         <img class="main_logo" src="/images/logo.svg" alt="" />
-        <button type="button"><img src="/images/menu.svg" alt="" /></button>
+        <button class="hide_pc" type="button">
+          <img src="/images/menu.svg" alt="" />
+        </button>
+      <nav>
+        <button class="hide_pc">
+          <img src="./images/arrow-right.svg" alt="Close" />
+        </button>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about">About</a></li>
+          <li><a href="./support">Support</a></li>
+        </ul>
+        <a class="button" href="./download">Download</a>
       </div>
-      <aside class="nav_bar"></aside>
+      </nav>
     </header>
     <main>
       <section class="app">
@@ -27,10 +39,10 @@
           </p>
           <p>
             Lorem Ipsum is simply dummy text<br class="hide" />
-            of the printing and <br class="hide_pc" />typesetting industry.<br
-              class="hide_pc"
+            of the printing and <br class="see_pc" />typesetting industry.<br
+              class="see"
             />Lorem Ipsum has been the industry's<br class="hide" />standard
-            dummy text <br class="hide_pc" />ever since the 1500s,<br
+            dummy text <br class="see_pc" />ever since the 1500s,<br
               class="hide"
             />when an unknown
           </p>
@@ -73,11 +85,11 @@
         </div>
         <div class="learn">
           <p>
-            Lorem Ipsum is simply dummy text of the<br class="hide" />
+            Lorem Ipsum is simply dummy text of the<br class="hide_pc" />
             printing and typesetting industry.<br />Lorem Ipsum has been the
-            industry's<br class="hide" />standard dummy text ever since the
-            1500s,<br class="hide" />when an unknown<br />Ipsum is simply dummy
-            text of the printing<br class="hide" />and typesetting industry.
+            industry's<br class="hide_pc" />standard dummy text ever since the
+            1500s,<br class="see_pc" />when an unknown<br class="hide_pc" />Ipsum is simply dummy
+            text of the printing<br class="hide_pc" />and typesetting industry.
           </p>
           <button type="button">Learn More</button>
         </div>
@@ -90,14 +102,17 @@
           </h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.<br class="hide_pc" />
+            industry.<br class="see_pc" />
             Ipsum has been the industry's standard dummy text
           </p>
         </div>
-        <div class="email">
-          <input type="text" placeholder="Enter your e-mail address" />
+        <form action="#">
+          <div class="email">
+            <input type="email" placeholder="Enter your e-mail address" />
+            <button type="submit">Subsribe</button>
         </div>
-        <button type="button">Subsribe</button>
+        </form>
+
       </article>
     </main>
 
@@ -124,5 +139,15 @@
         </ul>
       </div>
     </footer>
+
+    <article>
+      <div class="modal_box">
+        <h2 class="sr-only">Complete</h2>
+        <img src="./images/cat-subscribe.png" alt="">
+        <p>Thank You!</p>
+        <span>Lorem Ipsum is simply dummy<br class="hide_pc"> text of the printing industry.</span>
+        <button type="button">OK! I Love HODU</button>
+      </div>
+    </article>
   </body>
 </html>
