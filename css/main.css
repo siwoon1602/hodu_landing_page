@@ -326,7 +326,7 @@ article {
   width: 100vw;
   height: 50vh;
   background-position: 50%;
-  background-size: 100%;
+  background-size: cover;
   background-image: url(../images/img_5.jpg);
   z-index: 1;
   transform: translatey(-3rem);
