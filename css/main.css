@@ -436,7 +436,7 @@ article {
     display: flex;
     flex-direction: row;
     align-items: start;
-    gap: 12rem;
+    gap: 33rem;
     padding-top: 3.2rem;
   }
 
@@ -541,7 +541,7 @@ article {
   }
 
   .photo {
-    gap: 7.2rem;
+    gap: 5.2rem;
   }
   .footer_box {
     padding: 3rem 2rem;
