@@ -311,7 +311,7 @@ article {
 }
 
 .subsribe input {
-  background-image: url(./images/mail.svg);
+  background-image: url(../images/mail.svg);
   background-position: 1.6rem;
   background-repeat: no-repeat;
   background-size: 1.8rem;
