@@ -159,7 +159,7 @@ header button img {
   height: 19rem;
   background-size: cover;
   background-position: 50% 35%;
-  background-image: url(/images/img_4.jpg);
+  background-image: url(../images/img_4.jpg);
   border-radius: 1.8rem;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
   margin-bottom: 4rem;
@@ -311,7 +311,7 @@ article {
 }
 
 .subsribe input {
-  background-image: url(../images/mail.svg);
+  background-image: url(./images/mail.svg);
   background-position: 1.6rem;
   background-repeat: no-repeat;
   background-size: 1.8rem;
@@ -327,7 +327,7 @@ article {
   height: 50vh;
   background-position: 50%;
   background-size: 100%;
-  background-image: url(/images/img_5.jpg);
+  background-image: url(../images/img_5.jpg);
   z-index: 1;
   transform: translatey(-3rem);
 }
@@ -385,7 +385,7 @@ article {
 .modal_box {
   padding: 4rem 5rem 3rem;
   background-color: var(--main_color--color);
-  background-image: url(/images/modal-bg-img.png);
+  background-image: url(../images/modal-bg-img.png);
   background-size: 100%;
   background-position: top;
   background-repeat: no-repeat;
