@@ -576,7 +576,7 @@ article {
     background-repeat: no-repeat;
     background-image: url(../images/img_5.jpg);
     z-index: 1;
-    transform: translateY(-1rem);
+    transform: translateY(-3rem);
   }
 
   .cat_face::after {
