@@ -252,7 +252,6 @@ article {
 /* aritcle 종료 */
 
 .subsribe {
-  width: 32.6rem;
   height: 34.8rem;
   color: #fff;
   display: flex;
@@ -262,7 +261,7 @@ article {
   border-radius: 1.8rem;
   padding: 3.6rem 3.2rem 3rem 3.2rem;
   z-index: 10;
-  margin-left: 3rem;
+  margin: 0 3rem;
   position: relative;
   align-items: flex-start;
 }
@@ -539,8 +538,7 @@ article {
   }
 
   .subsribe {
-    width: 108rem;
-    height: 20rem;
+    height: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
