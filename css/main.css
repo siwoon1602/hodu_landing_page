@@ -380,7 +380,29 @@ article {
 }
 
 /* footer 끝 */
+/* aside*/
+.go_to_top a {
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  background-image: url(../images/^.svg);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #c4c4c4;
+  border-radius: 100%;
+  border: 1px solid #c4c4c4;
+  position: absolute;
+  z-index: 200;
+  right: 5rem;
+  top: 185rem;
+}
 
+.go_to_top a:hover {
+  background-image: url(../images/^_hover.svg);
+}
+/*aside*/
 /* 모달창 시작*/
 .modal_box {
   padding: 4rem 5rem 3rem;
@@ -447,6 +469,7 @@ article {
     justify-content: space-between;
     font-family: "SpoqaHanSansNeo-Regular";
     transform: translateY(2.5rem);
+    font-weight: 400;
   }
 
   header .header_content nav {
@@ -512,6 +535,7 @@ article {
   }
 
   .subsribe {
+    width: 128rem;
     padding: 5rem 5.8rem;
     display: flex;
     flex-direction: row;
