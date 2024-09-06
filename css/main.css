@@ -252,17 +252,19 @@ article {
 /* aritcle 종료 */
 
 .subsribe {
+  width: 32.6rem;
+  height: 34.8rem;
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 5rem;
   background-color: #263140;
   border-radius: 1.8rem;
-  padding: 3.6rem 3.2rem 3rem;
-  margin: 5rem 3.2rem 17.2rem;
+  padding: 3.6rem 3.2rem 3rem 3.2rem;
   z-index: 10;
-  margin: 0 3rem;
+  margin-left: 3rem;
   position: relative;
+  align-items: flex-start;
 }
 
 .subsribe_group {
@@ -537,6 +539,8 @@ article {
   }
 
   .subsribe {
+    width: 108rem;
+    height: 20rem;
     display: flex;
     flex-direction: row;
     align-items: center;
