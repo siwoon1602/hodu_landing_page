@@ -42,6 +42,19 @@ header {
   z-index: 1000;
 }
 
+header nav {
+  width: 60%;
+  height: 100vh;
+  padding: 2rem 0 0 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #263140;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
 .hide_m {
   display: none;
 }
@@ -49,28 +62,12 @@ header {
 .hide_pc {
   display: inline;
 }
-/* 모바일 화면 우측상단 버튼 클릭시 nav 구현 */
-/* .active {
-  display: none;
-} */
-/*모바일 화면 우측상단 버튼 클릭시 nav 구현  */
+
 header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* header nav {
-  width: 60%;
-  height: 100vh;
-  padding: 2rem 0 0 2rem;
-  top: 0;
-  right: 0;
-  position: absolute;
-  background-color: #263140;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
 header nav button {
   padding: 0;
   background-color: #263140;
@@ -84,6 +81,7 @@ header nav ul {
   font-size: 1.4rem;
   text-align: left;
   font-weight: 700;
+  padding-bottom: 5rem;
 }
 header nav a:nth-child(3) {
   background-color: var(--body_color--color);
@@ -238,18 +236,19 @@ header button img {
   margin-bottom: 5rem;
 }
 
-/* .learn button {
-  width: 10em;
-} */
 /* article */
-article {
+dialog {
+  display: none;
+}
+
+dialog[open] {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: none;
+  background-color: inherit;
 }
-
-/* aritcle 종료 */
 
 .subsribe {
   height: 34.8rem;
@@ -382,7 +381,6 @@ article {
   gap: 1.6rem;
 }
 
-/* footer 끝 */
 /* aside*/
 .go_to_top a {
   width: 50px;
@@ -405,7 +403,7 @@ article {
 .go_to_top a:hover {
   background-image: url(../images/^_hover.svg);
 }
-/*aside*/
+
 /* 모달창 시작*/
 .modal_box {
   padding: 4rem 5rem 3rem;
@@ -444,12 +442,19 @@ article {
 .modal_box button {
   margin-top: 2.8rem;
 }
-/* 모달창 종료 */
 
 @media (min-width: 767px) {
-  .hide {
-    display: none;
+  header nav {
+    width: auto;
+    height: auto;
+    padding: 0;
+    position: static;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
+
   .hide_m {
     display: inline;
   }
@@ -457,6 +462,7 @@ article {
   .hide_pc {
     display: none;
   }
+
   .app {
     display: flex;
     flex-direction: row;
@@ -465,11 +471,13 @@ article {
     padding-top: 3.2rem;
   }
 
+  header {
+    max-width: 192rem;
+  }
   header nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     font-family: "SpoqaHanSansNeo-Regular";
     transform: translateY(2.5rem);
     font-weight: 400;
@@ -478,17 +486,18 @@ article {
   header .header_content nav {
     display: flex;
     align-items: center;
-    justify-content: centern;
+    justify-content: center;
   }
   header .header_content nav a {
     margin: 0;
   }
 
   .header_content {
-    justify-self: center;
+    justify-content: center;
     align-items: center;
   }
   .header_content a {
+    padding: 0 2rem;
     text-decoration: none;
     color: black;
   }
@@ -526,10 +535,6 @@ article {
     gap: 2rem;
   }
 
-  .learn {
-    margin-bottom: 2rem;
-  }
-
   .learn button {
     padding: 0.5rem 0.5rem;
     width: 12rem;
@@ -560,6 +565,8 @@ article {
     background-position: 3rem;
   }
 
+  /* 이전 CSS 코드에 이어서... */
+
   .email button {
     position: absolute;
     left: 20em;
@@ -584,6 +591,7 @@ article {
   .cat_face::after {
     height: 34rem;
   }
+
   .footer_box {
     padding: 3rem 2rem;
     display: flex;
@@ -597,5 +605,18 @@ article {
     align-items: center;
     justify-content: space-evenly;
     gap: 40vw;
+  }
+
+  header .header_content {
+    background-color: var(--main_color--color);
+  }
+
+  header nav ul {
+    margin: 0;
+    gap: 2rem;
+  }
+
+  header nav a:nth-child(3) {
+    margin-left: 2rem;
   }
 }

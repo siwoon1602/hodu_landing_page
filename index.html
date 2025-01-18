@@ -12,7 +12,9 @@
     <header>
       <div class="header_content">
         <h1 class="sr-only">고양이 호두 홈페이지</h1>
-        <img class="main_logo" src="./images/logo.svg" alt="HODU" />
+        <a href="https://siwoon1602.github.io/hodu_landing_page/"
+          ><img class="main_logo" src="./images/logo.svg" alt="HODU"
+        /></a>
         <button class="hide_pc" type="button">
           <img src="./images/menu.svg" alt="메뉴창 열기" />
         </button>
@@ -117,8 +119,12 @@
         </div>
 
         <div class="email">
-          <input type="email" placeholder="Enter your e-mail address" />
-          <button type="submit">Subsribe</button>
+          <input
+            type="email"
+            placeholder="Enter your e-mail address"
+            class="subsribe_email"
+          />
+          <button type="submit" class="subsrive_modal_button">Subsribe</button>
         </div>
       </article>
     </main>
@@ -165,7 +171,7 @@
       </div>
     </footer>
 
-    <article>
+    <dialog class="o`odal">
       <div class="modal_box">
         <h2 class="sr-only">Complete</h2>
         <img src="./images/cat-subscribe.png" alt="고양이 호두 얼굴" />
@@ -174,8 +180,10 @@
           >Lorem Ipsum is simply dummy<br class="hide_pc" />
           text of the printing industry.</span
         >
-        <button type="button">OK! I Love HODU</button>
+        <button type="button" class="modal_off">OK! I Love HODU</button>
       </div>
-    </article>
+    </dialog>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
