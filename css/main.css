@@ -9,6 +9,11 @@
   --main_color--color: #f2e9d8;
   --body_color--color: #d97652;
 }
+
+.error {
+  color: var(--body_color--color);
+  font-weight: 700;
+}
 * {
   font-family: "SpoqaHanSansNeo-Regular";
 }
