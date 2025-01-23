@@ -138,3 +138,7 @@ table {
   white-space: nowrap;
   border: 0;
 }
+
+button {
+  cursor: pointer;
+}

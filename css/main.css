@@ -112,7 +112,9 @@ header button {
 header button img {
   width: 3.2rem;
 }
-
+.subsrive_modal_button {
+  cursor: pointer;
+}
 .app {
   display: flex;
   flex-direction: column;
