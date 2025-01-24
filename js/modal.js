@@ -8,7 +8,7 @@ modal.addEventListener("click", () => {
   const inputValue = subsriveText.value.trim();
   if (!inputValue || !emailRegex.test(inputValue)) {
     subsriveText.classList.add("error");
-    subsriveText.value = "올바르지 않은 이메일 형식입니다.";
+    subsriveText.value = "올바르지 않은 이메일 형식입니다 다시 입력해주세요요.";
     return;
   }
   onModal.showModal();
